@@ -1,1 +1,22 @@
 # PROGRAM6
+d=int(input("Enter Number of days: "))
+fine=0
+if(d<=5):
+    fine=d*0.50
+    print("Fine : ",float(fine))
+elif(d>5 and d<=10):
+    i=d-5
+    fine=(i*1)+(5*0.5)
+    print("fine :",float(fine))
+elif(d>10 and d<=30):
+    i=d-10
+    fine=(i*5)+(5*0.5)+(5*1)
+    print("fine :",float(fine))
+else:
+    i=d-10
+    fine=(i*5)+(5*0.5)+(5*1)
+    print("your membership is cancelled")
+    print("fine amount(rs):",float(fine))
+OUTPUT
+Enter Number of days: 7
+fine : 4.5
